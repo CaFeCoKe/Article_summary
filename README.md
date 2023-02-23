@@ -2,7 +2,9 @@
  Summarization Task를 수행하기 위해 KoBART를 네이버 뉴스 요약 데이터셋으로 fine-tuning하여 성능을 확인한다.<br>
  데이터셋은 2022년 7원 1일부터 2022년 7월 10일까지의 기사들이며, train, validation, test 데이터로 나누어져 있다. 데이터셋과 약 6개월 정도의 시간차이로 이슈가 다른 점도 생각하여 최근의 기사도 요약해보도록 할 것이다..
 
-## 1. 알고리즘 순서도
+## 1. 알고리즘 순서도 <br><br>
+![Article_Summary](https://user-images.githubusercontent.com/86700191/220829629-8c6bef99-31b4-40c4-9cce-b62d63a1f975.png)
+
 ## 2. 결과
 - Test 데이터셋에 대한 ROUGE 점수<br>
 <table border ="0">
@@ -62,3 +64,5 @@
 - [KoBART](https://github.com/SKT-AI/KoBART)
 - [네이버 뉴스 요약 데이터셋](https://huggingface.co/datasets/daekeun-ml/naver-news-summarization-ko)
 - [KoBART Summarization Example](https://github.com/seujung/KoBART-summarization)
+- [ROUGE score 설명](https://huffon.github.io/2019/12/07/rouge/)
+- [TorchMetrics의 ROUGE score](https://torchmetrics.readthedocs.io/en/stable/text/rouge_score.html)
